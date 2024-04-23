@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar'
 import { LinearGradient } from 'expo-linear-gradient'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import Animated, { FadeInDown } from 'react-native-reanimated'
+import { router } from 'expo-router/build/exports'
 // splash screen
 
 
@@ -35,6 +36,7 @@ export default function Index() {
 
         <Animated.View entering={FadeInDown.delay(200).springify()} className='flex items-center'>
           <TouchableOpacity
+          onPress={() => router.push('home')}
             style={{ height: hp(7), width: wp(80) }}
             className='bg-rose-500 flex items-center justify-center mx-auto rounded-full border-[2px] border-neutral-200'
           >
