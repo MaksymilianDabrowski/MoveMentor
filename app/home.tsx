@@ -2,10 +2,16 @@ import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { StatusBar } from 'expo-status-bar'
+<<<<<<< HEAD
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
 import { Ionicons } from '@expo/vector-icons'
 import ImageSlider2 from '../components/ImageSlider'
 import BodyParts from '../components/BodyParts'
+=======
+import { heightPercentageToDP as hp } from 'react-native-responsive-screen'
+import { Ionicons } from '@expo/vector-icons'
+import ImageSlider2 from '../components/ImageSlider'
+>>>>>>> 3ed9f37ad144b2c80ef05a34ab8c94aedf2f564e
 
 export default function Home() {
     return (
@@ -47,11 +53,14 @@ export default function Home() {
             <View>
                 <ImageSlider2 />
             </View>
+<<<<<<< HEAD
 
             {/* body parts list */}
             <View className="flex-1">
                 <BodyParts />
             </View>
+=======
+>>>>>>> 3ed9f37ad144b2c80ef05a34ab8c94aedf2f564e
         </SafeAreaView>
     )
 }

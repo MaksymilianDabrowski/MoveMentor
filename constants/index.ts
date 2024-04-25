@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 export const rapidApiKey = 'a5a364929dmsh927388d3f10363dp15df42jsnef692ccf8302';
 
 // przykładowe zdj do wrzucenia na slider, w bodyParts jakoś pozmieniać nazwy na polskie, ale jak się je zmieni w tym pliku to api nie bedzie dzialac
@@ -222,3 +223,9 @@ export const demoExercises = [
     "target": "cardiovascular system"
   }
 ]
+=======
+// przykładowe zdj do wrzucenia na slider
+export const sliderImages = [
+    require("../assets/images/sliderExample.jpg"),
+]
+>>>>>>> 3ed9f37ad144b2c80ef05a34ab8c94aedf2f564e
