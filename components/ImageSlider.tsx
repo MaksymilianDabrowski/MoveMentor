@@ -1,6 +1,6 @@
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import React from 'react';
-import Carousel, { ParallaxImage, AdditionalParallaxProps } from 'react-native-snap-carousel';
+// import Carousel, { ParallaxImage, AdditionalParallaxProps } from 'react-native-snap-carousel';
 import { sliderImages } from '@/constants';
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
@@ -26,18 +26,19 @@ export default function ImageSlider() {
     };
 
     return (
-        <Carousel
-            data={sliderImages}
-            loop={true}
-            autoplay={true}
-            // 34 wyrzuca błąd nwm dlaczego, funkcja przebudowana od 0
-            renderItem={renderItem}
-            hasParallaxImages={true}
-            sliderWidth={wp(100)}
-            firstItem={1}
-            autoplayInterval={4000}
-            itemWidth={wp(100) - 70}
-            slideStyle={{ display: "flex", alignItems: "center" }}
-        />
+//         <Carousel
+//             data={sliderImages}
+//             loop={true}
+//             autoplay={true}
+//             // 34 wyrzuca błąd nwm dlaczego, funkcja przebudowana od 0
+//             renderItem={renderItem}
+//             hasParallaxImages={true}
+//             sliderWidth={wp(100)}
+//             firstItem={1}
+//             autoplayInterval={4000}
+//             itemWidth={wp(100) - 70}
+//             slideStyle={{ display: "flex", alignItems: "center" }}
+//         />
+    <Text>KARUZELA</Text>
     );
 }

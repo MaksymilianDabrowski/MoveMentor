@@ -2,9 +2,10 @@ import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { StatusBar } from 'expo-status-bar'
-import { heightPercentageToDP as hp } from 'react-native-responsive-screen'
+import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
 import { Ionicons } from '@expo/vector-icons'
 import ImageSlider2 from '../components/ImageSlider'
+import BodyParts from '../components/BodyParts'
 
 export default function Home() {
     return (
@@ -46,6 +47,12 @@ export default function Home() {
             <View>
                 <ImageSlider2 />
             </View>
+
+            {/* BodyParts list */}
+            <View className="flex-1">
+                  <BodyParts />
+            </View>
+
         </SafeAreaView>
     )
 }
